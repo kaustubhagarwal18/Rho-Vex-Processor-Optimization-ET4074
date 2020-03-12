@@ -1,0 +1,91 @@
+Slice Logic Utilization:
+  Number of Slice Registers:                27,282 out of 301,440    9%
+    Number used as Flip Flops:              27,281
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                     51,907 out of 150,720   34%
+    Number used as logic:                   50,657 out of 150,720   33%
+      Number using O6 output only:          44,882
+      Number using O5 output only:             809
+      Number using O5 and O6:                4,966
+      Number used as ROM:                        0
+    Number used as Memory:                     687 out of  58,400    1%
+      Number used as Dual Port RAM:            504
+        Number using O6 output only:            36
+        Number using O5 output only:             4
+        Number using O5 and O6:                464
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           183
+        Number using O6 output only:           183
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:    563
+      Number with same-slice register load:    353
+      Number with same-slice carry load:       210
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                20,317 out of  37,680   53%
+  Number of LUT Flip Flop pairs used:       55,216
+    Number with an unused Flip Flop:        29,818 out of  55,216   54%
+    Number with an unused LUT:               3,309 out of  55,216    5%
+    Number of fully used LUT-FF pairs:      22,089 out of  55,216   40%
+    Number of unique control sets:             510
+    Number of slice register sites lost
+      to control set restrictions:           2,455 out of 301,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       146 out of     600   24%
+    Number of LOCed IOBs:                      146 out of     146  100%
+    IOB Flip Flops:                             27
+    IOB Master Pads:                             9
+    IOB Slave Pads:                              9
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                 29 out of     416    6%
+    Number using RAMB36E1 only:                 29
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                 82 out of     832    9%
+    Number using RAMB18E1 only:                 82
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      7 out of      32   21%
+    Number used as BUFGs:                        7
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                79 out of     720   10%
+    Number used as ILOGICE1s:                   14
+    Number used as ISERDESE1s:                  65
+  Number of OLOGICE1/OSERDESE1s:               135 out of     720   18%
+    Number used as OLOGICE1s:                   13
+    Number used as OSERDESE1s:                 122
+  Number of BSCANs:                              2 out of       4   50%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           8 out of      72   11%
+  Number of BUFRs:                               2 out of      36    5%
+    Number of LOCed BUFRs:                       2 out of       2  100%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            8 out of     768    1%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      20    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         3 out of      18   16%
+  Number of IODELAYE1s:                         90 out of     720   12%
+    Number of LOCed IODELAYE1s:                 10 out of      90   11%
+  Number of MMCM_ADVs:                           1 out of      12    8%
+    Number of LOCed MMCM_ADVs:                   1 out of       1  100%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+Average Fanout of Non-Clock Nets:                4.69

@@ -1,0 +1,43 @@
+
+[core]
+CONFIG = 0111
+
+# Stop bit configuration. This value must be 2, 4, or 8, and must be less than
+# or equal to the issue width. The number of syllables in a bundle must be an
+# integer multiple of this value. That is, if there is not enough
+# instruction-level parallelism, NOP syllables must be appended to the bundle
+# to meet the constraint. These "horizontal NOPs" do not slow the program down
+# directly (as the NOPs are executed in parallel to useful instructions), but
+# they do increase the size of the executable and thus affect instruction cache
+# behavior. Thus, for speed, you want this number as low as possible. The cost
+# is area.
+STOPBIT = 4
+
+# Instruction cache size in bytes. This must be a power of two, and must be at
+# least the issue width times 8 bytes (= 2 cache lines). Append a k to specify
+# the value in kiB. The practical upper limit is around 64k.
+ICACHE = 32k
+
+# Data cache size in bytes. This must be a power of two, and must be at least
+# 8 bytes (= 2 cache lines). Append a k to specify the value in kiB. The
+# practical upper limit is around 32k.
+DCACHE = 16k
+
+
+###############################################################################
+[core]
+###############################################################################
+
+CONFIG = 0100
+
+STOPBIT = 4
+
+# Instruction cache size in bytes. This must be a power of two, and must be at
+# least the issue width times 8 bytes (= 2 cache lines). Append a k to specify
+# the value in kiB. The practical upper limit is around 64k.
+ICACHE = 32k
+
+# Data cache size in bytes. This must be a power of two, and must be at least
+# 8 bytes (= 2 cache lines). Append a k to specify the value in kiB. The
+# practical upper limit is around 32k.
+DCACHE = 8k
